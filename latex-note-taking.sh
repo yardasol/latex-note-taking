@@ -1,13 +1,21 @@
-## Vim
 # Install vimplug
+## vim
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+## neovim
+sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 
 # Copy tex snippets
+## vim
 cp UltiSnips $HOME/.vim/UltiSnips
+## neovim
 
 # add to .vimrc
 echo vimrc >> $HOME/.vimrc
+
+# add to init.vim
+echo init.vim >> $HOME/.config/nvim/.
 
 ## Conda environment setup
 conda create -n notes
