@@ -8,14 +8,13 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 
 # Copy tex snippets
 ## vim
-cp UltiSnips $HOME/.vim/UltiSnips
-## neovim
+cp -r UltiSnips $HOME/.vim/UltiSnips
 
 # add to .vimrc
-echo vimrc >> $HOME/.vimrc
+cat vimrc | cat - > $HOME/.vimrc
 
 # add to init.vim
-echo init.vim >> $HOME/.config/nvim/.
+cat init.vim | cat - > $HOME/.config/nvim/.
 
 ## Conda environment setup
 conda create -n notes
