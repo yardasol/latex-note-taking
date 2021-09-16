@@ -1,6 +1,8 @@
 " Specify a directory for plugins
 " - For Neovim: stdpath('data') . '/plugged'
 " - Avoid using standard Vim directory names like 'plugin'
+set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
+
 call plug#begin('~/.vim/plugged')
 
 Plug 'sirver/ultisnips'
