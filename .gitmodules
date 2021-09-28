@@ -1,0 +1,6 @@
+[submodule "inkscape-figures"]
+	path = inkscape-figures
+	url = git@gitub.com:gillescastel/inkscape-figures
+[submodule "inkscape-shortcut-manager"]
+	path = inkscape-shortcut-manager
+	url = git@github.com:gillescastel/inkscape-shortcut-manager/
